@@ -1,0 +1,114 @@
+.experience-entry{display:flex;align-items:center;justify-content:space-between;gap:25px;padding:28px 5.3vw;border-block:1px solid var(--line);background:#080f17}
+.experience-entry p{font:italic 23px var(--serif);color:#c9ced1;margin:0}
+.experience-entry>div{display:flex;gap:16px;align-items:center;flex-wrap:wrap}
+.experience-entry button{background:transparent;border:0;color:var(--gold);font-size:11px;letter-spacing:.1em;min-height:44px;padding:10px 6px}
+.experience-entry button:hover{color:var(--paper)}
+.navigation-experience{position:fixed;inset:0;width:100%;height:100dvh;max-width:none;max-height:none;margin:0;padding:0;border:0;background:transparent;color:var(--paper);overflow:hidden}
+.navigation-experience::backdrop{background:transparent;backdrop-filter:none}
+.navigation-stage{position:absolute;inset:0;background:#050a12}
+.navigation-stage .planet-canvas{position:absolute;inset:0;touch-action:none;cursor:grab}
+.navigation-experience[data-experience="departure"] .navigation-stage:after{content:"";position:absolute;z-index:2;inset:0;pointer-events:none;background:linear-gradient(0deg,#020811d9,transparent 40%,transparent 82%,#020811bb)}
+.navigation-curtain{position:absolute;inset:0;background:#040910;opacity:var(--curtain,0);z-index:2;pointer-events:none;transition:opacity .8s}
+.navigation-experience:not(.is-revealing) .navigation-curtain{transition:none}
+.navigation-experience.is-revealing .navigation-stage,.navigation-experience.is-revealing .departure-copy,.navigation-experience.is-revealing .navigation-toolbar{opacity:0;transition:opacity .6s}
+.navigation-toolbar{position:relative;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:25px 5vw;gap:20px}
+.navigation-toolbar button,.solar-tools button{background:#08111cbf;color:#e7dfd2;border:1px solid #c9b38a50;min-height:44px;padding:12px 17px;font-size:10px;letter-spacing:.1em}
+.navigation-toolbar .navigation-wordmark{font:22px var(--serif);letter-spacing:.2em}
+.departure-copy{position:absolute;z-index:3;bottom:10vh;left:8vw;right:8vw;pointer-events:none}
+.departure-copy h2{font:clamp(38px,4.8vw,74px)/1.07 var(--serif);font-weight:400;margin:18px 0 30px;max-width:650px;text-shadow:0 3px 25px #000}
+.departure-copy .eyebrow{color:#e4c99c}
+.departure-track{height:1px;background:#ffffff26;max-width:360px}
+.departure-track span{display:block;height:1px;background:var(--gold);transform-origin:left;transform:scaleX(0)}
+.navigation-loading{position:absolute;z-index:4;inset:42% 10% auto;text-align:center;font:italic 25px var(--serif);color:#dec8a3}
+.navigation-notice{position:absolute;z-index:8;top:100px;left:5vw;max-width:440px;font-size:13px;line-height:1.6;background:#08111ce8}
+.navigation-notice:empty{display:none}
+.advanced-open .site-header{opacity:0;pointer-events:none}
+.arrival-scene{isolation:isolate;z-index:0}
+.lighting-images{position:absolute;inset:0;opacity:0;transition:opacity .6s;pointer-events:none}
+.lighting-images img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(var(--arrival-scale));transform-origin:65% 50%}
+.arrival-shade{z-index:4;pointer-events:none}
+.resort-lighting{display:none;position:absolute;z-index:5;right:5.3vw;top:125px;width:310px;padding:18px 20px;background:#070e19c7;border:1px solid #cfb17f3d;backdrop-filter:blur(12px)}
+.destination-experience[data-state="arrived"][data-view="overview"] .resort-lighting{display:block}
+.resort-lighting>p:first-child{margin:0 0 12px;font-size:11px;letter-spacing:.15em;color:var(--gold)}
+.resort-lighting>div{display:flex;gap:5px}
+.resort-lighting button{flex:1;min-height:42px;padding:8px 7px;background:transparent;color:#d6dce1;border:1px solid #c9b4854d;font-size:10px;letter-spacing:.07em}
+.resort-lighting button[aria-pressed="true"]{color:#081019;background:var(--gold);border-color:var(--gold)}
+.resort-lighting button:disabled{opacity:.45;cursor:wait}
+.resort-lighting input{display:block;width:100%;accent-color:var(--gold);height:22px;margin:12px 0 8px;cursor:ew-resize}
+.resort-lighting #lighting-description{font-size:12px;line-height:1.5;color:#c0c8ce;margin:0;min-height:36px}
+.resort-lighting .lighting-actions{margin-top:8px;gap:12px}
+.resort-lighting .lighting-actions button{flex:initial;min-height:34px;padding:5px 0;border:0;border-bottom:1px solid #c9b4854d;font-size:9px;text-align:left;color:#dec499}
+.resort-lighting .lighting-actions button[aria-pressed="true"]{background:transparent;color:#f3e3c6}
+.destination-experience[data-lighting-state="unavailable"] #lighting-status,.destination-experience[data-lighting-state="partial"] #lighting-status{position:static;width:auto;height:auto;clip:auto;overflow:visible;font-size:11px;line-height:1.6;margin:12px 0 0}
+.arrival-shade{transition:opacity .45s}
+.destination-experience.is-viewing-scenery .arrival-shade{opacity:.12}
+.destination-experience.is-viewing-scenery .destination-overview{opacity:0;pointer-events:none;transition:opacity .35s}
+@media(max-width:980px){.resort-lighting{top:100px;width:280px;padding:14px 16px}}
+@media(min-width:681px) and (max-width:1100px) and (min-height:541px){.destination-overview{margin-top:clamp(225px,25vh,265px)}}
+@media(max-width:680px){.resort-lighting{top:88px;left:7vw;right:7vw;width:auto;padding:12px 15px}.resort-lighting>p:first-child{font-size:10px;margin-bottom:8px}.resort-lighting button{min-height:38px;font-size:9px}.resort-lighting input{margin:6px 0 3px;height:24px}.resort-lighting #lighting-description{font-size:11px;min-height:33px}.destination-overview{margin-top:clamp(225px,29vh,285px)}}
+@media(prefers-reduced-motion:reduce){.lighting-images,.arrival-shade{transition:none}}
+.solar-interface{position:absolute;inset:0;z-index:3;pointer-events:none}
+.solar-tools{position:absolute;top:96px;left:5vw;right:5vw;display:flex;align-items:center;justify-content:space-between;gap:12px;pointer-events:auto}
+.solar-tools>div{display:flex;gap:6px;flex-wrap:wrap}
+.solar-tools button{font-size:10px;padding:10px 12px;letter-spacing:.07em}
+.solar-tools button:disabled{opacity:.75;cursor:default}
+.solar-tools button[aria-pressed="true"]{background:#cfb17f;color:#08111a}
+.solar-labels{position:absolute;inset:0;overflow:hidden}
+.solar-marker{position:absolute;top:0;left:0;white-space:nowrap;pointer-events:auto;font-size:10px;letter-spacing:.12em;color:#cad1d7;padding:8px 10px;background:#081019d9;border:1px solid transparent;min-height:38px}
+span.solar-marker{pointer-events:none;color:#82919e;font-size:9px;background:none}
+button.solar-marker:before{content:"";display:inline-block;width:4px;height:4px;margin:0 7px 2px 0;background:#b79c71;border-radius:50%}
+.solar-marker.is-selected{color:#f5e1b9;border-color:#b79c7170}
+.solar-panel{position:absolute;left:5vw;bottom:135px;width:min(350px,27vw);padding:23px 0;pointer-events:auto;background:linear-gradient(90deg,#050b13d9,#050b1399 80%,transparent)}
+.solar-panel h2{font:clamp(40px,4.5vw,68px)/1 var(--serif);letter-spacing:-.035em;margin:15px 0}
+.solar-panel .eyebrow{font-size:10px;letter-spacing:.1em;color:var(--gold)}
+.solar-resort{font:16px var(--serif);letter-spacing:.08em;margin:0 0 15px}
+.solar-panel>p:not(.eyebrow):not(.solar-resort){font:15px/1.6 var(--serif);color:#ccd3d7}
+.solar-route{border-top:1px solid var(--line);margin-top:20px;padding-top:18px}
+.solar-route>span{font-size:11px;letter-spacing:.1em;color:#e4c99c}
+.solar-route .departure-track{margin:12px 0}
+.solar-route small{display:block;font-size:10px;line-height:1.65;color:#98a7b3;max-width:320px}
+.solar-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
+.solar-actions .btn{font-size:9px;min-height:44px;padding:12px 14px}
+.solar-footer{position:absolute;left:5vw;right:5vw;bottom:25px;display:flex;justify-content:space-between;gap:20px;align-items:center}
+.solar-destinations{display:flex;gap:7px;pointer-events:auto;flex-wrap:wrap}
+.solar-destinations button{background:#060e17bf;color:#aab5bf;border:1px solid #cfb17f3d;padding:13px 16px;min-height:44px;font-size:10px;letter-spacing:.08em}
+.solar-destinations button[aria-pressed="true"]{color:#f3dcaf;border-color:var(--gold)}
+.solar-footer>p{font-size:9px;letter-spacing:.1em;line-height:1.9;color:#9cabb7;text-align:right}
+.solar-footer>p span{letter-spacing:0;color:#788d9f}
+.solar-scrub-label{position:absolute;right:5vw;bottom:130px;width:220px;pointer-events:auto;font-size:9px;letter-spacing:.1em;color:var(--gold);background:#050b13c9;padding:12px}
+.solar-scrub-label input{display:block;width:100%;margin-top:10px;accent-color:var(--gold)}
+.solar-scrub-label label{display:flex;justify-content:space-between;gap:12px}
+.solar-scrub-label output{font-variant-numeric:tabular-nums}
+.solar-scrub-label button{min-height:36px;background:none;border:0;padding:6px 0;color:#e4c99c;font-size:10px;letter-spacing:.08em}
+.solar-scrub-label p{margin:2px 0;font-size:10px;line-height:1.5;letter-spacing:0;color:#aebbc7}
+@media(max-width:980px){.solar-panel{width:290px;bottom:130px}.solar-tools{top:86px;align-items:flex-start}.solar-tools button{padding:10px;font-size:8px}}
+@media(max-width:680px){
+ .solar-tools{top:78px;left:5vw;right:5vw;flex-direction:column;gap:7px}
+ .solar-tools>div{gap:5px}.solar-tools button{min-height:36px;padding:9px;font-size:9px;letter-spacing:.02em}
+ .solar-panel{left:6vw;right:6vw;bottom:128px;width:auto;padding:18px 0 0;background:linear-gradient(0deg,#050b13f2,#050b13d9 85%,transparent)}
+ .solar-panel h2{font-size:37px;margin:8px 0}.solar-panel .eyebrow{font-size:8px}
+ .solar-resort{font-size:13px;margin-bottom:6px}.solar-panel>p:not(.eyebrow):not(.solar-resort){display:none}
+ .solar-route{margin-top:10px;padding-top:10px}.solar-route small{font-size:9px;line-height:1.45}.solar-route .departure-track{margin:8px 0}
+ .solar-actions{margin-top:13px;gap:8px}.solar-actions .btn{padding:10px 12px;font-size:8px}
+ .solar-footer{bottom:12px;left:6vw;right:6vw;flex-direction:column;align-items:flex-start;gap:7px}
+ .solar-destinations{gap:5px;flex-wrap:nowrap;width:100%}.solar-destinations button{font-size:8px;flex:1;padding:10px 5px;min-height:40px}
+ .solar-footer>p{text-align:left;font-size:8px;margin:0}.solar-marker{font-size:9px;padding:5px 7px;min-height:32px}
+ .solar-scrub-label{bottom:auto;top:177px;right:5vw;width:180px;padding:8px;font-size:9px}
+}
+@media(max-height:700px) and (min-width:681px){.solar-panel{bottom:90px;padding:0}.solar-panel h2{font-size:40px}.solar-panel>p:not(.eyebrow):not(.solar-resort){display:none}.solar-footer{bottom:10px}.solar-actions{margin-top:14px}}
+@media(max-height:540px) and (min-width:681px){
+ .navigation-toolbar{padding-top:15px;padding-bottom:15px}
+ .solar-tools{top:76px}
+ .solar-panel{top:132px;bottom:80px;width:290px;overflow-y:auto;overscroll-behavior:contain;padding:0 12px 12px 0}
+ .solar-panel h2{margin-top:8px}
+ .solar-scrub-label{bottom:85px}
+ .resort-lighting{top:94px;width:260px}
+ .destination-overview{max-width:55%;margin-top:20px}
+ .destination-overview h2{font-size:44px}
+}
+@media(max-width:680px){
+ .experience-entry{align-items:flex-start;flex-direction:column;gap:12px;padding:23px 7vw}.experience-entry p{font-size:21px}.experience-entry>div{gap:6px 20px}
+ .experience-entry button{font-size:10px}.navigation-toolbar{padding:18px 6vw;gap:8px}.navigation-toolbar button{padding:11px;font-size:9px}.navigation-wordmark{display:none}
+ .departure-copy{left:7vw;right:7vw;bottom:11vh}.departure-copy h2{font-size:42px}
+}
+@media(prefers-reduced-motion:reduce){.navigation-curtain,.navigation-experience.is-revealing *{transition:none!important}}

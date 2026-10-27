@@ -1,0 +1,19 @@
+ASTRAEA editorial concept imagery — October 2026
+
+Created for this project using built-in OpenAI image generation.
+All people, uniforms, spacecraft and interiors are fictional artistic concepts.
+These are not documentary photographs, certified spacecraft designs or real crew.
+
+Crew: crew-elena-vale.webp, crew-james-orion.webp, crew-maya-chen.webp
+Fleet: astraea-one.webp, celeste.webp, aurelia.webp
+Onboard: interior-suite.webp, interior-dining.webp, interior-lounge.webp,
+         interior-spa.webp, interior-atrium.webp, interior-cabin.webp
+Closing composition: final-orbital-dawn.webp
+
+Each image also has a 640px-wide -small.webp variant.
+No external image hosting or generation service is used at runtime.
+Full generation prompts and original paths: docs/editorial-assets.json.
+Optimization script: docs/prepare_editorial_assets.py (Pillow required).
+Original generated PNGs were preserved; WebP copies are the deployment assets.
+
+The pre-existing planetary maps are independently attributed in planet-credits.txt.

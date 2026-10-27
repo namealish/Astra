@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#050a11" />
+  <meta name="description" content="ASTRAEA — Extraordinary Worlds Await. Explore five exceptional interplanetary destinations and the future of luxury travel." />
+  <title>ASTRAEA — Extraordinary Worlds Await.</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preload" as="image" href="assets/starfield.webp" />
+  <link rel="preload" as="image" href="assets/saturn-resort.webp" />
+  <noscript><style>img[data-deferred-src]{display:none}</style></noscript>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="cinematic.css" />
+  <link rel="stylesheet" href="advanced.css" />
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#destinations">Skip to content</a>
+  <header class="site-header" id="site-header">
+    <a class="brand" href="#home" aria-label="Astraea home">
+      <span class="brand-symbol" aria-hidden="true">✧</span>
+      <span class="brand-word">ASTRAEA <small>INTERPLANETARY HOSPITALITY</small></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a href="#destinations">DESTINATIONS</a>
+      <a href="#fleet">THE FLEET</a>
+      <a href="#experience">EXPERIENCE</a>
+      <a href="#crew">CREW</a>
+    </nav>
+    <div class="header-actions">
+      <a class="header-book" href="#book">BOOK A JOURNEY <span aria-hidden="true">↗</span></a>
+      <button type="button" class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-controls="mobile-navigation" aria-label="Open navigation"><span></span><span></span></button>
+    </div>
+  </header>
+  <nav class="mobile-nav" id="mobile-navigation" aria-label="Mobile navigation" hidden>
+    <a href="#destinations">Destinations</a><a href="#fleet">The Fleet</a><a href="#experience">Experience</a><a href="#crew">Crew</a><a href="#book">Book a journey ↗</a>
+  </nav>
+
+  <main>
+    <section class="hero" id="home" data-destination="saturn" aria-label="Explore our planetary destinations">
+      <div class="hero-stars" aria-hidden="true"></div>
+      <canvas id="planet-canvas" class="planet-canvas" aria-hidden="true"></canvas>
+      <div class="hero-planet-fallback" id="planet-fallback" aria-hidden="true" style="display:block"><div class="fallback-ring"></div><div class="fallback-globe"></div></div>
+      <div class="hero-vignette" aria-hidden="true"></div>
+      <div class="hero-side-label" aria-hidden="true">THE ASTRAEA COLLECTION — 2086</div>
+
+      <div class="hero-info" id="hero-info" aria-live="polite" aria-atomic="true">
+        <div class="eyebrow hero-counter"><span class="eyebrow-line"></span> DESTINATION <span id="hero-index">04</span> / 05</div>
+        <h1 id="hero-title">SATURN</h1>
+        <p class="hero-resort" id="hero-resort">THE RINGS RESORT</p>
+        <div class="accent-rule"></div>
+        <p class="hero-description" id="hero-description">Wake above the most extraordinary view in the solar system.</p>
+        <div class="hero-ctas">
+          <button type="button" class="btn btn-gold" id="hero-explore">EXPLORE SATURN <span aria-hidden="true">↗</span></button>
+          <a class="btn btn-outline" id="hero-book" href="#book" data-book-current>BOOK YOUR JOURNEY</a>
+        </div>
+      </div>
+
+      <aside class="resort-preview" id="resort-preview">
+        <a href="#destinations" id="preview-link" class="resort-preview-link" aria-label="Discover The Rings Resort">
+          <img id="preview-image" src="assets/saturn-resort.webp" alt="Architectural concept of The Rings Resort overlooking Saturn" width="1056" height="704" />
+          <span class="preview-info"><span class="preview-eyebrow">A WORLD APART</span><strong id="preview-name">THE RINGS RESORT</strong><span class="preview-caption" id="preview-caption">ORBITAL LUXURY</span></span>
+          <span class="preview-arrow" aria-hidden="true">↗</span>
+        </a>
+      </aside>
+
+      <div class="hero-arrows" aria-label="Destination carousel controls">
+        <button type="button" class="orbit-arrow orbit-prev" id="hero-prev" aria-label="Previous destination"><span aria-hidden="true">‹</span></button>
+        <button type="button" class="orbit-arrow orbit-next" id="hero-next" aria-label="Next destination"><span aria-hidden="true">›</span></button>
+      </div>
+      <div class="hero-bottom">
+        <div class="hero-bottom-note"><span>EXPLORE THE EXTRAORDINARY</span><span class="tiny-line"></span> FIVE WORLDS. INFINITE POSSIBILITIES.</div>
+        <div class="planet-tabs" id="planet-tabs" role="tablist" aria-label="Choose planetary destination">
+          <button type="button" role="tab" aria-selected="false" data-destination="0">LUNA<i></i></button>
+          <button type="button" role="tab" aria-selected="false" data-destination="1">MARS<i></i></button>
+          <button type="button" role="tab" aria-selected="false" data-destination="2">EUROPA<i></i></button>
+          <button type="button" role="tab" aria-selected="true" data-destination="3" class="active">SATURN<i></i></button>
+          <button type="button" role="tab" aria-selected="false" data-destination="4">TITAN<i></i></button>
+        </div>
+        <a class="scroll-cue" href="#destinations">SCROLL TO DISCOVER <span aria-hidden="true">↓</span></a>
+      </div>
+    </section>
+
+    <section class="experience-entry" aria-label="Immersive experiences">
+      <p>Every extraordinary journey has a beginning.</p>
+      <div><button type="button" id="begin-journey">BEGIN YOUR JOURNEY ↗</button><button type="button" id="replay-intro" hidden>REPLAY INTRO ↻</button><button type="button" id="open-solar-system" hidden>EXPLORE THE SOLAR SYSTEM ↗</button></div>
+    </section>
+    <section class="section destinations-section" id="destinations">
+      <div class="section-header reveal">
+        <div><p class="eyebrow">01 / FIVE EXTRAORDINARY DESTINATIONS</p><h2>Extraordinary worlds <em>await.</em></h2></div>
+        <div class="section-intro"><p>Resorts at the edge of imagination. Places no traveler has ever dreamed of, created for those who have seen it all.</p><a class="text-link" href="#book">PLAN YOUR ESCAPE <span aria-hidden="true">↗</span></a></div>
+      </div>
+      <div class="destinations-grid">
+        <a class="destination-card reveal" href="#home" data-open-destination="0" style="--delay:.02s"><img decoding="async" data-deferred-src="assets/luna-resort.webp" alt="Tranquility Resort, luxury architecture on the Moon with Earth beyond" width="1056" height="704" /><noscript><img loading="lazy" src="assets/luna-resort.webp" alt="Tranquility Resort on the Moon" width="1056" height="704" /></noscript><span class="destination-overlay"><span class="destination-number">01 / THE MOON</span><span class="destination-row"><span><strong>Luna</strong><small>TRANQUILITY RESORT</small></span><span class="round-link" aria-hidden="true">↗</span></span></span></a>
+        <a class="destination-card reveal" href="#home" data-open-destination="1" style="--delay:.10s"><img decoding="async" data-deferred-src="assets/mars-resort.webp" alt="Elysium Resort nested into a dramatic red Martian landscape" width="1056" height="704" /><noscript><img loading="lazy" src="assets/mars-resort.webp" alt="Elysium Resort on Mars" width="1056" height="704" /></noscript><span class="destination-overlay"><span class="destination-number">02 / THE RED PLANET</span><span class="destination-row"><span><strong>Mars</strong><small>ELYSIUM RESORT</small></span><span class="round-link" aria-hidden="true">↗</span></span></span></a>
+        <a class="destination-card reveal" href="#home" data-open-destination="2" style="--delay:.04s"><img decoding="async" data-deferred-src="assets/europa-resort.webp" alt="Oceanus Resort, an extraordinary white retreat on Europa beneath Jupiter" width="1056" height="704" /><noscript><img loading="lazy" src="assets/europa-resort.webp" alt="Oceanus Resort on Europa" width="1056" height="704" /></noscript><span class="destination-overlay"><span class="destination-number">03 / JUPITER'S MOON</span><span class="destination-row"><span><strong>Europa</strong><small>OCEANUS RESORT</small></span><span class="round-link" aria-hidden="true">↗</span></span></span></a>
+        <a class="destination-card reveal" href="#home" data-open-destination="3" style="--delay:.1s"><img decoding="async" data-deferred-src="assets/saturn-resort.webp" alt="The Rings Resort, orbital architecture with panoramic Saturn views" width="1056" height="704" /><noscript><img loading="lazy" src="assets/saturn-resort.webp" alt="The Rings Resort at Saturn" width="1056" height="704" /></noscript><span class="destination-overlay"><span class="destination-number">04 / THE RINGED PLANET</span><span class="destination-row"><span><strong>Saturn</strong><small>THE RINGS RESORT</small></span><span class="round-link" aria-hidden="true">↗</span></span></span></a>
+        <a class="destination-card reveal" href="#home" data-open-destination="4" style="--delay:.16s"><img decoding="async" data-deferred-src="assets/titan-resort.webp" alt="Horizon Resort overlooking Titan's amber landscapes" width="1000" height="620" /><noscript><img loading="lazy" src="assets/titan-resort.webp" alt="Horizon Resort on Titan" width="1000" height="620" /></noscript><span class="destination-overlay"><span class="destination-number">05 / SATURN'S MOON</span><span class="destination-row"><span><strong>Titan</strong><small>HORIZON RESORT</small></span><span class="round-link" aria-hidden="true">↗</span></span></span></a>
+      </div>
+      <div class="signature-bottom">ASTRAEA <span>✧</span> A DIFFERENT KIND OF DISCOVERY</div>
+    </section>
+
+    <section class="section interiors-section" id="experience">
+      <div class="section-header reveal"><div><p class="eyebrow">02 / LUXURY BETWEEN WORLDS</p><h2>Getting there is <em>half the experience.</em></h2></div><div class="section-intro"><p>Beyond the destination is a journey without compromise. Every detail, every moment, beautifully considered.</p><div class="small-controls"><button type="button" id="gallery-prev" aria-label="Previous experience">←</button><button type="button" id="gallery-next" aria-label="Next experience">→</button></div></div></div>
+      <div class="interior-gallery" id="interior-gallery" tabindex="0" aria-label="Luxury experience photographs">
+        <article class="gallery-card"><img loading="lazy" decoding="async" src="assets/interior-lounge.webp" srcset="assets/interior-lounge-small.webp 640w, assets/interior-lounge.webp 1536w" sizes="(max-width: 680px) 125vw, 65vw" width="1536" height="1024" alt="Ivory lounge chairs inside a panoramic spacecraft observation dome above Earth" /><div><span>01 / THE JOURNEY</span><h3>Observation Lounge</h3><p>Front-row seats to the universe.</p></div></article>
+        <article class="gallery-card"><img loading="lazy" decoding="async" src="assets/interior-suite.webp" srcset="assets/interior-suite-small.webp 640w, assets/interior-suite.webp 1536w" sizes="(max-width: 680px) 125vw, 65vw" width="1536" height="1024" alt="Private spacecraft suite with ivory linens and a curved window overlooking Earth" /><div><span>02 / YOUR SANCTUARY</span><h3>Celestial Suites</h3><p>The comfort of home, infinitely beyond.</p></div></article>
+        <article class="gallery-card"><img loading="lazy" decoding="async" src="assets/interior-dining.webp" srcset="assets/interior-dining-small.webp 640w, assets/interior-dining.webp 1536w" sizes="(max-width: 680px) 125vw, 65vw" width="1536" height="1024" alt="Intimate navy and gold spacecraft dining room with Saturn beyond the windows" /><div><span>03 / THE TABLE</span><h3>Celestial Dining</h3><p>A new perspective on every course.</p></div></article>
+        <article class="gallery-card"><img loading="lazy" decoding="async" src="assets/interior-spa.webp" srcset="assets/interior-spa-small.webp 640w, assets/interior-spa.webp 1536w" sizes="(max-width: 680px) 125vw, 65vw" width="1536" height="1024" alt="Enclosed zero-gravity wellness cocoons and a sensory treatment chamber aboard the spacecraft" /><div><span>04 / WELLBEING</span><h3>Zero-G Spa</h3><p>Discover an entirely new sense of balance.</p></div></article>
+        <article class="gallery-card"><img loading="lazy" decoding="async" src="assets/interior-atrium.webp" srcset="assets/interior-atrium-small.webp 640w, assets/interior-atrium.webp 1536w" sizes="(max-width: 680px) 125vw, 65vw" width="1536" height="1024" alt="Two-level botanical atrium within a spacecraft habitat with an olive tree and observation skylight" /><div><span>05 / GATHER TOGETHER</span><h3>The Atrium</h3><p>Where new worlds meet.</p></div></article>
+        <article class="gallery-card"><img loading="lazy" decoding="async" src="assets/interior-cabin.webp" srcset="assets/interior-cabin-small.webp 640w, assets/interior-cabin.webp 1536w" sizes="(max-width: 680px) 125vw, 65vw" width="1536" height="1024" alt="Intimate private spacecraft cabin with a window daybed, writing desk and a lunar view" /><div><span>06 / ENTIRELY YOURS</span><h3>Private Cabins</h3><p>A quiet corner of the cosmos.</p></div></article>
+      </div>
+      <div class="gallery-progress"><span id="gallery-progress-label">01 — 06</span><div class="gallery-track"><span id="gallery-progress-bar"></span></div><span>DRAG TO EXPLORE →</span></div>
+    </section>
+
+    <section class="section fleet-section" id="fleet">
+      <div class="section-header reveal"><div><p class="eyebrow">03 / THE ASTRAEA FLEET</p><h2>Designed for the <em>journey beyond.</em></h2></div><div class="section-intro"><p>A new era of spacecraft, conceived as private sanctuaries among the stars. The journey is the destination.</p></div></div>
+      <div class="fleet-grid">
+        <button class="fleet-card reveal" type="button" data-ship="0"><span class="fleet-visual"><img loading="lazy" decoding="async" src="assets/astraea-one.webp" srcset="assets/astraea-one-small.webp 640w, assets/astraea-one.webp 1536w" sizes="(max-width: 680px) 88vw, 30vw" alt="ASTRAEA ONE interplanetary liner with twin habitat spines and a rotating habitat wheel" width="1536" height="1024" /></span><span class="fleet-index">01 / INTERPLANETARY FLAGSHIP</span><span class="fleet-bottom"><span><strong>ASTRAEA ONE</strong><small>120 GUESTS · LONG-RANGE VOYAGES</small></span><span class="fleet-plus">↗</span></span></button>
+        <button class="fleet-card reveal" type="button" data-ship="1"><span class="fleet-visual"><img loading="lazy" decoding="async" src="assets/celeste.webp" srcset="assets/celeste-small.webp 640w, assets/celeste.webp 1536w" sizes="(max-width: 680px) 88vw, 30vw" alt="CELESTE compact delta-wing orbital shuttle with a panoramic cockpit" width="1536" height="1024" /></span><span class="fleet-index">02 / ORBITAL TRANSPORT</span><span class="fleet-bottom"><span><strong>CELESTE</strong><small>48 GUESTS · ORBITAL EXCELLENCE</small></span><span class="fleet-plus">↗</span></span></button>
+        <button class="fleet-card reveal" type="button" data-ship="2"><span class="fleet-visual"><img loading="lazy" decoding="async" src="assets/aurelia.webp" srcset="assets/aurelia-small.webp 640w, assets/aurelia.webp 1536w" sizes="(max-width: 680px) 88vw, 30vw" alt="AURELIA private twin-hull space yacht with a glass observation salon" width="1536" height="1024" /></span><span class="fleet-index">03 / PRIVATE CHARTER</span><span class="fleet-bottom"><span><strong>AURELIA</strong><small>12 GUESTS · ABSOLUTE PRIVACY</small></span><span class="fleet-plus">↗</span></span></button>
+      </div>
+    </section>
+
+    <section class="hospitality-section" id="hospitality">
+      <div class="hospitality-visual"><img loading="lazy" decoding="async" src="assets/interior-suite.webp" srcset="assets/interior-suite-small.webp 640w, assets/interior-suite.webp 1536w" sizes="(max-width: 980px) 100vw, 75vw" alt="Private spacecraft suite in warm ivory and navy, with Earth beyond a panoramic window" /></div>
+      <div class="hospitality-copy reveal"><p class="eyebrow">04 / THE ASTRAEA STANDARD</p><h2>Five-star hospitality.<br/><em>Zero Earth required.</em></h2><p>Perfection has a new address. From personalized service to experiences impossible anywhere else, we've reimagined what it means to travel exceptionally.</p><div class="pillars"><span>01 <strong>PRIVATE SUITES</strong></span><span>02 <strong>FINE DINING</strong></span><span>03 <strong>PERSONAL CONCIERGE</strong></span><span>04 <strong>EXTRAORDINARY EXCURSIONS</strong></span></div><a class="text-link" href="#book">EXPERIENCE THE DIFFERENCE ↗</a></div>
+    </section>
+
+    <section class="section crew-section" id="crew">
+      <div class="section-header reveal"><div><p class="eyebrow">05 / THE PEOPLE BEHIND THE JOURNEY</p><h2>In extraordinary <em>hands.</em></h2></div><div class="section-intro"><p>Exceptional journeys begin with exceptional people. Your comfort and peace of mind are always our first priority.</p></div></div>
+      <div class="crew-grid">
+        <article class="crew-card reveal"><div class="crew-portrait"><img loading="lazy" decoding="async" src="assets/crew-elena-vale.webp" srcset="assets/crew-elena-vale-small.webp 640w, assets/crew-elena-vale.webp 960w" sizes="(max-width: 680px) 88vw, 30vw" alt="Fictional Commander Elena Vale in a navy and champagne-gold aviation uniform" width="960" height="1200" /></div><p>COMMANDER</p><h3>Elena Vale</h3><span>ASTRAEA ONE CAPTAIN</span><small>4 Lunar Expeditions · 2 Mars Expeditions</small><button type="button" class="crew-profile-button" data-crew-profile="0" aria-expanded="false" aria-controls="crew-biography-0">MEET YOUR CREW <span aria-hidden="true">+</span></button><div class="crew-biography" id="crew-biography-0"><div><p>A calm presence at the helm. Elena leads the flagship crew with a passion for exploration and the considered, unhurried service that defines ASTRAEA.</p></div></div></article>
+        <article class="crew-card reveal"><div class="crew-portrait"><img loading="lazy" decoding="async" src="assets/crew-james-orion.webp" srcset="assets/crew-james-orion-small.webp 640w, assets/crew-james-orion.webp 960w" sizes="(max-width: 680px) 88vw, 30vw" alt="Fictional Flight Commander James Orion in a navy and champagne-gold aviation uniform" width="960" height="1200" /></div><p>FLIGHT COMMANDER</p><h3>James Orion</h3><span>INTERPLANETARY OPERATIONS</span><small>12 Years Aerospace Experience</small><button type="button" class="crew-profile-button" data-crew-profile="1" aria-expanded="false" aria-controls="crew-biography-1">MEET YOUR CREW <span aria-hidden="true">+</span></button><div class="crew-biography" id="crew-biography-1"><div><p>From the first welcome to the final approach, James oversees the flight experience. His focus is simple: a seamless journey between extraordinary worlds.</p></div></div></article>
+        <article class="crew-card reveal"><div class="crew-portrait"><img loading="lazy" decoding="async" src="assets/crew-maya-chen.webp" srcset="assets/crew-maya-chen-small.webp 640w, assets/crew-maya-chen.webp 960w" sizes="(max-width: 680px) 88vw, 30vw" alt="Fictional flight physician Dr. Maya Chen in a navy and champagne-gold aviation uniform" width="960" height="1200" /></div><p>CHIEF FLIGHT PHYSICIAN</p><h3>Dr. Maya Chen</h3><span>SPACE MEDICINE & WELLNESS</span><small>Space Medicine · Human Performance</small><button type="button" class="crew-profile-button" data-crew-profile="2" aria-expanded="false" aria-controls="crew-biography-2">MEET YOUR CREW <span aria-hidden="true">+</span></button><div class="crew-biography" id="crew-biography-2"><div><p>Maya brings a human touch to life beyond Earth, shaping restorative onboard routines and a deeply personal approach to guest wellbeing.</p></div></div></article>
+      </div>
+    </section>
+
+    <section class="section booking-section" id="book">
+      <div class="booking-backdrop" aria-hidden="true"></div>
+      <div class="booking-heading reveal"><p class="eyebrow">06 / YOUR NEXT GREAT ADVENTURE</p><h2>Where will you <em>go next?</em></h2><p>The extraordinary is closer than you think.</p></div>
+      <form class="booking-form" id="booking-form">
+        <div class="booking-field"><label for="from">FROM</label><select id="from" name="from"><option value="Earth — Orbital Terminal">Earth — Orbital Terminal</option></select></div>
+        <div class="booking-field"><label for="destination">DESTINATION</label><select id="destination" name="destination" required><option value="">Choose a destination</option><option value="Luna">Luna — Tranquility Resort</option><option value="Mars">Mars — Elysium Resort</option><option value="Europa">Europa — Oceanus Resort</option><option value="Saturn">Saturn — The Rings Resort</option><option value="Titan">Titan — Horizon Resort</option></select></div>
+        <div class="booking-field"><label for="departure">DEPARTURE</label><input type="date" id="departure" name="departure" required /></div>
+        <div class="booking-field small"><label for="travelers">TRAVELERS</label><select id="travelers" name="travelers"><option value="1">01 guest</option><option value="2" selected>02 guests</option><option value="3">03 guests</option><option value="4">04 guests</option><option value="5">05 guests</option><option value="6">06 guests</option></select></div>
+        <div class="booking-field small"><label for="cabin">CABIN</label><select id="cabin" name="cabin"><option value="Celestial Suite">Celestial Suite</option><option value="Grand Suite">Grand Suite</option><option value="Private Residence">Private Residence</option></select></div>
+        <button type="submit" class="btn btn-gold booking-submit">SEARCH JOURNEYS <span aria-hidden="true">↗</span></button>
+      </form>
+      <div class="journey-summary" aria-live="polite" aria-atomic="true">
+        <img id="journey-image" loading="lazy" decoding="async" src="assets/interior-lounge-small.webp" alt="The spacecraft observation lounge" width="640" height="427" />
+        <div class="journey-summary-copy"><p class="eyebrow" id="journey-eyebrow">CURATED AROUND YOU</p><h3 id="journey-name">Five worlds. One extraordinary choice.</h3><p id="journey-detail">Choose your destination to preview the route, accommodation and estimated fare.</p></div>
+        <div class="journey-estimate"><strong id="journey-estimate">Your journey, tailored.</strong><span id="journey-estimate-note">Private suites · Thoughtful service</span></div>
+      </div>
+      <div class="cabin-collection" role="group" aria-label="Accommodation categories"><button type="button" data-cabin-value="Celestial Suite" aria-pressed="true"><span>01 / CELESTIAL SUITE</span><strong>Your private refuge.</strong><small>Thoughtfully appointed comfort for the journey.</small></button><button type="button" data-cabin-value="Grand Suite" aria-pressed="false"><span>02 / GRAND SUITE</span><strong>A little more space.</strong><small>Expanded living and a panoramic perspective.</small></button><button type="button" data-cabin-value="Private Residence" aria-pressed="false"><span>03 / PRIVATE RESIDENCE</span><strong>Entirely your own.</strong><small>An exclusive sanctuary for your private party.</small></button></div>
+      <p class="demo-disclaimer">CONCEPT EXPERIENCE · SAMPLE ITINERARIES & PRICES ONLY · NO ACTUAL BOOKINGS</p>
+      <div class="booking-results" id="booking-results" aria-live="polite" hidden></div>
+    </section>
+
+    <section class="section app-section" id="app">
+      <div class="app-scroll-stage">
+      <div class="app-copy reveal"><p class="eyebrow">07 / ASTRAEA MOBILE</p><h2>The universe <em>in your pocket.</em></h2><p>Your entire journey, effortlessly connected. Discover worlds, explore your itinerary, and enjoy extraordinary service at your fingertips.</p><div class="app-features"><span>✧ PERSONAL ITINERARY</span><span>✧ DIGITAL BOARDING PASS</span><span>✧ 24/7 PRIVATE CONCIERGE</span></div><p class="app-note">SEVEN CONNECTED MOMENTS · INTERACTIVE DEMO</p><div class="phone-switcher" role="group" aria-label="Preview mobile app screen"><button type="button" class="is-active" aria-pressed="true" data-appscreen="0">DISCOVER</button><button type="button" aria-pressed="false" data-appscreen="5">BOOKING</button><button type="button" aria-pressed="false" data-appscreen="6">COUNTDOWN</button><button type="button" aria-pressed="false" data-appscreen="2">BOARDING</button><button type="button" aria-pressed="false" data-appscreen="1">ITINERARY</button><button type="button" aria-pressed="false" data-appscreen="3">ONBOARD</button><button type="button" aria-pressed="false" data-appscreen="4">CONCIERGE</button></div><div class="app-story-control"><p id="app-story-hint">Scroll to follow the journey, or select a screen.</p><button type="button" id="app-scroll-toggle" aria-pressed="true">SCROLL STORY · ON ↓</button><span id="app-chapter">01 / 07 · DISCOVER</span><div class="app-story-track" aria-hidden="true"><span id="app-story-progress"></span></div></div></div>
+      <div class="app-showcase reveal"><div class="app-orbit app-orbit-one"></div><div class="app-orbit app-orbit-two"></div><div class="phone"><div class="phone-island"></div><div class="phone-screen" id="phone-screen"><div class="phone-top"><span>ASTRAEA</span><span>✧</span></div><span class="phone-label" id="phone-label">YOUR NEXT WORLD</span><h3 id="phone-title">Explore the<br/><em>extraordinary.</em></h3><div class="phone-photo" id="phone-photo"></div><div class="phone-panel" id="phone-panel"><small>NEXT DESTINATION</small><strong>SATURN</strong><span>THE RINGS RESORT <b>↗</b></span></div><div class="phone-dots" aria-hidden="true"><span class="selected"></span><span></span><span></span><span></span><span></span><span></span><span></span></div><p class="phone-status" id="phone-status" role="status"></p></div></div></div>
+      </div>
+    </section>
+
+    <section class="prive-section" id="prive"><div class="prive-image"><img loading="lazy" src="assets/saturn-resort.webp" alt="Exclusive panoramic terrace overlooking the rings of Saturn" /></div><div class="prive-shade"></div><div class="prive-content reveal"><span class="prive-star">✧</span><p class="eyebrow">08 / BY INVITATION ONLY</p><p class="prive-label">ASTRAEA PRIVÉ</p><h2>Travel beyond <em>ordinary.</em></h2><p>An extraordinary circle of explorers. Exclusive opportunities, private voyages, and experiences reserved for the few.</p><div class="prive-benefits"><span>PRIORITY BOOKING</span><span>PRIVATE CHARTERS</span><span>PERSONAL CONCIERGE</span></div><button type="button" class="btn btn-gold" id="prive-invite">DISCOVER PRIVÉ <span aria-hidden="true">↗</span></button></div></section>
+
+    <section class="final-section"><div class="final-art" aria-hidden="true"><img loading="lazy" decoding="async" src="assets/final-orbital-dawn.webp" srcset="assets/final-orbital-dawn-small.webp 640w, assets/final-orbital-dawn.webp 1600w" sizes="(max-width: 680px) 1600px, 100vw" width="1600" height="900" alt="" /></div><div class="final-content reveal"><p class="eyebrow">THE FUTURE IS WAITING</p><h2>Your next world <em>is waiting.</em></h2><p>Some journeys change the way you see the world. Others change the world you see.</p><div class="final-actions"><a class="btn btn-gold" href="#destinations">EXPLORE DESTINATIONS <span aria-hidden="true">↗</span></a><a class="btn btn-outline" href="#book">BOOK YOUR JOURNEY</a></div></div></section>
+  </main>
+  <footer class="site-footer"><div class="footer-top"><a class="brand brand-footer" href="#home"><span class="brand-symbol" aria-hidden="true">✧</span><span class="brand-word">ASTRAEA <small>EXTRAORDINARY WORLDS AWAIT.</small></span></a><p>Boundless journeys. Extraordinary destinations.<br/>A new world of exceptional hospitality.</p></div><div class="footer-links"><div><span>EXPLORE</span><a href="#destinations">Destinations</a><a href="#fleet">Our Fleet</a><a href="#experience">The Experience</a><a href="#crew">Your Crew</a></div><div><span>TRAVEL</span><a href="#book">Book a Journey</a><a href="#app">Mobile App</a><a href="#prive">Astraea Privé</a></div><div><span>ASTRAEA</span><a href="mailto:journeys@astraea.example">Contact Us</a><a href="#prive">Membership</a><a href="#home">Back to Top ↑</a></div></div><div class="footer-base"><span>© 2086 ASTRAEA. A FICTIONAL BRAND CONCEPT.</span><span>DESIGNED FOR THE EXTRAORDINARY ✧</span></div></footer>
+
+  <dialog id="navigation-experience" class="navigation-experience" aria-label="ASTRAEA immersive navigation">
+    <div id="navigation-stage" class="navigation-stage"></div><div class="navigation-curtain" aria-hidden="true"></div>
+    <div class="navigation-toolbar"><button type="button" id="navigation-exit">← RETURN TO WEBSITE</button><span class="navigation-wordmark">ASTRAEA</span><button type="button" id="skip-intro">SKIP INTRO ↗</button></div>
+    <p class="navigation-loading" id="navigation-loading" role="status">Preparing your departure…</p><p class="navigation-notice" id="navigation-notice" role="status"></p>
+    <div class="departure-copy" aria-live="polite"><p class="eyebrow" id="departure-chapter">EARTH ORBITAL TERMINAL</p><h2 id="departure-title">A journey beyond the familiar.</h2><div class="departure-track"><span id="departure-progress"></span></div></div>
+    <div class="solar-interface" id="solar-interface" hidden>
+      <div id="solar-labels" class="solar-labels"></div>
+      <div class="solar-tools"><div role="group" aria-label="Camera mode"><button type="button" data-camera-mode="overview" aria-pressed="true">OVERVIEW</button><button type="button" data-camera-mode="destination" aria-pressed="false">DESTINATION</button><button type="button" data-camera-mode="journey" aria-pressed="false">JOURNEY</button></div><div><button type="button" id="solar-reset">RESET CAMERA</button><button type="button" id="solar-pause" aria-pressed="false">PAUSE MOTION</button><button type="button" id="solar-zoom-in" aria-label="Zoom in">＋</button><button type="button" id="solar-zoom-out" aria-label="Zoom out">−</button></div></div>
+      <aside class="solar-panel" aria-labelledby="solar-title"><p class="eyebrow" id="solar-parent"></p><h2 id="solar-title">SATURN</h2><p class="solar-resort" id="solar-resort"></p><p id="solar-description"></p><div class="solar-route"><span id="solar-route-label"></span><div class="departure-track"><span id="solar-route-progress"></span></div><small id="solar-duration"></small></div><div class="solar-actions"><button type="button" class="btn btn-gold" id="solar-explore">EXPLORE SATURN ↗</button><button type="button" class="btn btn-outline" id="solar-book">PLAN YOUR JOURNEY</button></div></aside>
+      <div id="solar-scrub-label" class="solar-scrub-label" hidden><label for="solar-scrub">PREVIEW THE ROUTE <output id="solar-progress-value" for="solar-scrub">0%</output></label><input id="solar-scrub" type="range" min="0" max="100" value="0" aria-label="Journey route progress" /><button type="button" id="solar-replay">RESTART ROUTE ↻</button><p id="solar-motion-note" hidden>Automatic motion is off. Scrub to preview.</p></div>
+      <p id="solar-status" class="sr-only" role="status" aria-live="polite"></p>
+      <div class="solar-footer"><div class="solar-destinations" role="group" aria-label="Select a destination"><button type="button" data-solar-destination="0">LUNA</button><button type="button" data-solar-destination="1">MARS</button><button type="button" data-solar-destination="2">EUROPA</button><button type="button" data-solar-destination="3">SATURN</button><button type="button" data-solar-destination="4">TITAN</button></div><p>STYLIZED SPACING & SIZES · NOT TO SCALE<br/><span>Drag to orbit · Scroll or pinch to zoom</span></p></div>
+    </div>
+  </dialog>
+  <dialog id="destination-experience" class="destination-experience" aria-labelledby="destination-title" aria-describedby="destination-description" data-state="idle">
+    <div class="arrival-scene" aria-hidden="true"><img id="destination-scene" alt="" decoding="async" /><div id="lighting-images" class="lighting-images"></div><div class="arrival-shade"></div></div>
+    <div class="arrival-veil" aria-hidden="true"></div>
+    <div class="destination-toolbar"><button id="destination-return" class="destination-return" type="button">← <span>RETURN TO ORBIT</span></button><span class="destination-brand" aria-hidden="true">ASTRAEA</span><button id="destination-skip" type="button">SKIP TRANSITION ↗</button></div>
+    <section id="resort-lighting" class="resort-lighting" aria-labelledby="lighting-title">
+      <p id="lighting-title">TIME OF DAY</p>
+      <div role="group" aria-label="Lighting preset"><button type="button" data-lighting="0" disabled>DAWN</button><button type="button" data-lighting="1" disabled>DAY</button><button type="button" data-lighting="2" disabled>SUNSET</button><button type="button" data-lighting="3" disabled>NIGHT</button></div>
+      <input type="range" id="lighting-slider" min="0" max="300" value="100" aria-label="Continuous environmental lighting" aria-describedby="lighting-description" disabled />
+      <p id="lighting-description">Art-directed environmental lighting.</p><p id="lighting-status" class="sr-only" role="status" aria-live="polite"></p>
+      <div class="lighting-actions"><button type="button" id="lighting-scenery" aria-pressed="false">VIEW ARCHITECTURE</button><button type="button" id="lighting-retry" hidden>RETRY LIGHTING</button></div>
+    </section>
+    <div class="destination-flight" aria-hidden="true"><span id="destination-flight-label"></span><div class="destination-track"><span id="destination-progress"></span></div></div>
+    <div class="destination-overview" id="destination-overview">
+      <p class="eyebrow" id="destination-location"></p><h2 id="destination-title" tabindex="-1"></h2><p class="destination-description" id="destination-description"></p>
+      <ul class="destination-amenities" id="destination-amenities"></ul>
+      <div class="destination-actions"><button class="btn btn-gold" type="button" id="destination-more">EXPLORE RESORT <span aria-hidden="true">↗</span></button><button class="btn btn-outline" type="button" data-resort-book>BOOK YOUR JOURNEY</button></div>
+      <p id="destination-image-note" class="destination-image-note" hidden>The resort image could not load. You can still explore the details or plan a journey.</p>
+    </div>
+    <section class="destination-details" id="destination-details" hidden aria-labelledby="destination-detail-title"><button class="text-link" id="destination-back" type="button">← RESORT OVERVIEW</button><p class="eyebrow">THE ASTRAEA COLLECTION</p><h2 id="destination-detail-title" tabindex="-1"></h2><p id="destination-story"></p><ol id="destination-stays"></ol><button class="btn btn-gold" type="button" data-resort-book>PLAN YOUR STAY ↗</button><p class="destination-concept-note">A fictional destination concept. No real reservation is made.</p></section>
+    <p class="sr-only" id="destination-status" role="status"></p>
+  </dialog>
+  <dialog class="ship-dialog" id="ship-dialog" aria-labelledby="ship-dialog-name"><button type="button" class="dialog-close" id="close-ship" aria-label="Close spacecraft details">✕</button><div class="dialog-visual"><img id="ship-dialog-image" alt="Illustration of Astraea spacecraft" /></div><div class="dialog-body"><p class="eyebrow">THE ASTRAEA FLEET</p><h2 id="ship-dialog-name">ASTRAEA ONE</h2><p id="ship-dialog-description"></p><div class="ship-stats" id="ship-stats"></div><a class="btn btn-gold" href="#book" id="ship-book">PLAN A VOYAGE ↗</a></div></dialog>
+  <dialog class="invite-dialog" id="invite-dialog" aria-labelledby="invite-title"><button type="button" class="dialog-close" id="close-invite" aria-label="Close membership invitation">✕</button><p class="eyebrow">ASTRAEA PRIVÉ</p><h2 id="invite-title">An invitation to <em>the extraordinary.</em></h2><p>Privé is an exclusive concept membership offering early access to exceptional interplanetary journeys. This demonstration does not collect personal information.</p><a class="btn btn-gold" href="#book" id="invite-journeys">EXPLORE PRIVATE JOURNEYS ↗</a></dialog>
+</body>
+</html>

@@ -1,0 +1,8 @@
+// One editorial destination model shared by hero, map, resort and booking.
+export const destinations=Object.freeze([
+ {name:'LUNA',body:'luna',parent:'earth',resort:'TRANQUILITY RESORT',description:'A new perspective on home, from the quiet beauty of the lunar surface.',caption:'LUNAR SERENITY',image:'luna-resort.webp',alt:'Lunar Tranquility Resort with a panoramic view of Earth',label:'EXPLORE LUNA',duration:3},
+ {name:'MARS',body:'mars',parent:'sun',resort:'ELYSIUM RESORT',description:'Find an extraordinary kind of solitude beneath the Martian sky.',caption:'THE RED FRONTIER',image:'mars-resort.webp',alt:'Elysium Resort terraces set into the Martian mountains',label:'EXPLORE MARS',duration:8},
+ {name:'EUROPA',body:'europa',parent:'jupiter',resort:'OCEANUS RESORT',description:'An intimate sanctuary beneath the immense presence of Jupiter.',caption:'JOVIAN RETREAT',image:'europa-resort.webp',alt:'Oceanus Resort nestled within a vast icy landscape',label:'EXPLORE EUROPA',duration:19},
+ {name:'SATURN',body:'saturn',parent:'sun',resort:'THE RINGS RESORT',description:'Wake above the most extraordinary view in the solar system.',caption:'ORBITAL LUXURY',image:'saturn-resort.webp',alt:'The Rings Resort with an uninterrupted view of Saturn',label:'EXPLORE SATURN',duration:22},
+ {name:'TITAN',body:'titan',parent:'saturn',resort:'HORIZON RESORT',description:'Discover an untouched world, wrapped in light the color of gold.',caption:'BEYOND THE ORDINARY',image:'titan-resort.webp',alt:'Horizon Resort in Titan’s amber landscape',label:'EXPLORE TITAN',duration:26}
+].map(Object.freeze));

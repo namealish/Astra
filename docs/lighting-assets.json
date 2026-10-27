@@ -1,0 +1,105 @@
+[
+  {
+    "destination": "luna",
+    "mode": "night",
+    "prompt": "Use case: lighting-weather. Image 1 is the edit target: ASTRAEA Tranquility Resort on the Moon. Create a photorealistic NIGHT lighting state of this exact composition. Lock the camera, crop, architecture, windows, furniture, terrain silhouette and the precise Earth position and size. Change ONLY illumination, shadows and emissive architectural lighting. The lunar terrain is dark cold charcoal, with faint Earthshine revealing rock texture. No direct sunlight. The resort windows and interior lamps are warm champagne-gold, illuminating nearby terraces realistically; subtle path and pool lighting. Earth remains prominent, stars are visible in a pitch black vacuum sky. No blue atmospheric sky, no fog, no clouds. Preserve deep detailed shadows, avoid crushing all detail, avoid bloom. This is a matching image for a premium day/night architectural configurator: pixel-aligned geometry is critical. No text, labels, logos or added objects. Keep the original landscape aspect ratio.",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a1344c-b609-7062-9784-a403ed3e6015\\exec-4440ac87-abc5-4db0-a127-e26d43263ad2.png"
+  },
+  {
+    "destination": "mars",
+    "mode": "night",
+    "prompt": "Use case: lighting-weather. Image 1 is the edit target. Produce a photorealistic NIGHT illumination variant of this exact ASTRAEA resort photograph. Night on Mars: no sun above the horizon, a dark rust-red desert and dusky almost-black thin atmosphere. Subtle stars, terrain softly visible. Warm resort windows, recessed terrace lighting and underwater illumination reveal architecture against the darker desert. Do not add an Earth-like blue twilight sky. Lock camera, crop, aspect ratio, architecture, furniture, windows, terrain and celestial-body positions and silhouettes exactly. Change only lighting, cast shadows, sky illumination and emissive lights. Preserve detailed shadows and restrained exposure, no excessive glow. Pixel-aligned matching geometry for a cinematic time-of-day configurator is critical. No added objects, people, text, labels or logos.",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a1344c-b609-7062-9784-a403ed3e6015\\exec-f06ea0b7-f11c-4b2f-86e7-a944eec2f400.png"
+  },
+  {
+    "destination": "europa",
+    "mode": "night",
+    "prompt": "Use case: lighting-weather. Image 1 is the edit target. Produce a photorealistic NIGHT illumination variant of this exact ASTRAEA resort photograph. Night on Europa: deep blue-black vacuum sky, no atmospheric clouds or thick blue haze. The icy terrain is in shadow with faint reflected light from Jupiter, which stays exactly in place and remains visible. Warm architectural lighting, softly illuminated glass and gentle ice reflections. No sunrise. Lock camera, crop, aspect ratio, architecture, furniture, windows, terrain and celestial-body positions and silhouettes exactly. Change only lighting, cast shadows, sky illumination and emissive lights. Preserve detailed shadows and restrained exposure, no excessive glow. Pixel-aligned matching geometry for a cinematic time-of-day configurator is critical. No added objects, people, text, labels or logos.",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a1344c-b609-7062-9784-a403ed3e6015\\exec-ce4f07a2-391d-4c66-8d37-b5c08cbc44bd.png"
+  },
+  {
+    "destination": "saturn",
+    "mode": "night",
+    "prompt": "Use case: lighting-weather. Image 1 is the edit target. Produce a photorealistic NIGHT illumination variant of this exact ASTRAEA resort photograph. Orbital night at Saturn: this is an interior in an orbital resort, NEVER a solid surface on Saturn. The structure is in planetary shadow; no direct sunlight. Saturn and its rings stay exactly in place, subtly lit and readable but much dimmer. The panoramic lounge becomes intimate, lit by warm lamps and architectural coves; realistic gold reflections on polished materials. Black vacuum outside, no terrestrial sunset or horizon. Lock camera, crop, aspect ratio, architecture, furniture, windows, terrain and celestial-body positions and silhouettes exactly. Change only lighting, cast shadows, sky illumination and emissive lights. Preserve detailed shadows and restrained exposure, no excessive glow. Pixel-aligned matching geometry for a cinematic time-of-day configurator is critical. No added objects, people, text, labels or logos.",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a1344c-b609-7062-9784-a403ed3e6015\\exec-479684ad-f5d4-4ac4-8d45-82158ac80ca1.png"
+  },
+  {
+    "destination": "luna",
+    "mode": "dawn",
+    "prompt": "Use case: lighting-weather. Image 1 is the edit target. Create a photorealistic DAWN illumination variant for the ASTRAEA resort day/night configurator. Lunar dawn: very low hard white sunlight skims the terrain from the right, leaving long sharp crater and architecture shadows toward the left. No atmosphere, haze, clouds or colored terrestrial sky: black vacuum. Restrained warm indoor lights remain. Earth stays in exactly the same place and size. Lock the camera viewpoint, aspect ratio, framing, architecture, furniture, terrain silhouettes and celestial positions to the input exactly. Change only illumination, directional cast shadows, atmospheric light where appropriate and architectural light intensity. This is one matching lighting state, not a new scene. Keep highlights controlled and shadow detail readable. No new objects, people, text or logos.",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a1344c-b609-7062-9784-a403ed3e6015\\exec-a17ab692-62be-4be5-8e68-f84209864ea4.png"
+  },
+  {
+    "destination": "mars",
+    "mode": "dawn",
+    "prompt": "Use case: lighting-weather. Image 1 is the edit target. Create a photorealistic DAWN illumination variant for the ASTRAEA resort day/night configurator. Martian dawn: low pale sunlight from the far left grazes dusty red terrain, with delicate pale peach airborne dust in the distance and long terrain shadows. The atmosphere is thin, not an Earth-blue sky. Warm interior lights remain visible but not dominant. Lock the camera viewpoint, aspect ratio, framing, architecture, furniture, terrain silhouettes and celestial positions to the input exactly. Change only illumination, directional cast shadows, atmospheric light where appropriate and architectural light intensity. This is one matching lighting state, not a new scene. Keep highlights controlled and shadow detail readable. No new objects, people, text or logos.",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a1344c-b609-7062-9784-a403ed3e6015\\exec-08910ce7-967d-4564-a977-fed267222f00.png"
+  },
+  {
+    "destination": "europa",
+    "mode": "dawn",
+    "prompt": "Use case: lighting-weather. Image 1 is the edit target. Create a photorealistic DAWN illumination variant for the ASTRAEA resort day/night configurator. Europa dawn: low cold sunlight grazes fractured ice, casting long crisp shadows. Black vacuum sky with NO atmospheric blue haze or clouds. Jupiter remains exactly in place and size. Warm resort interior lights contrast with faint icy reflected light. Lock the camera viewpoint, aspect ratio, framing, architecture, furniture, terrain silhouettes and celestial positions to the input exactly. Change only illumination, directional cast shadows, atmospheric light where appropriate and architectural light intensity. This is one matching lighting state, not a new scene. Keep highlights controlled and shadow detail readable. No new objects, people, text or logos.",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a1344c-b609-7062-9784-a403ed3e6015\\exec-1a2279b7-a72e-41bc-8fb7-deb95a702f29.png"
+  },
+  {
+    "destination": "saturn",
+    "mode": "dawn",
+    "prompt": "Use case: lighting-weather. Image 1 is the edit target. Create a photorealistic DAWN illumination variant for the ASTRAEA resort day/night configurator. Orbital dawn: the orbital resort emerges from planetary shadow. A thin beam of pale warm sunlight enters the panoramic lounge and skims the floor. Saturn and the rings remain exactly in place, becoming delicately illuminated. This is an orbital illumination change, NOT sunrise on a surface: black vacuum outside, no horizon or clouds. Lock the camera viewpoint, aspect ratio, framing, architecture, furniture, terrain silhouettes and celestial positions to the input exactly. Change only illumination, directional cast shadows, atmospheric light where appropriate and architectural light intensity. This is one matching lighting state, not a new scene. Keep highlights controlled and shadow detail readable. No new objects, people, text or logos.",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a1344c-b609-7062-9784-a403ed3e6015\\exec-e91991bb-b2b8-4f11-a0a2-e18064e3d464.png"
+  },
+  {
+    "destination": "titan",
+    "mode": "dawn",
+    "prompt": "Use case: lighting-weather. Image 1 is the edit target. Create a photorealistic DAWN illumination variant for the ASTRAEA resort day/night configurator. Titan dawn: dense, softly glowing muted ochre atmospheric haze with extremely soft shadows, quiet low-contrast amber terrain and warm interior lighting. No clear blue sky, no sharp sun. Preserve the distant celestial silhouette but soften it within the dense haze. Improve photographic detail while preserving exact geometry. Lock the camera viewpoint, aspect ratio, framing, architecture, furniture, terrain silhouettes and celestial positions to the input exactly. Change only illumination, directional cast shadows, atmospheric light where appropriate and architectural light intensity. This is one matching lighting state, not a new scene. Keep highlights controlled and shadow detail readable. No new objects, people, text or logos.",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a1344c-b609-7062-9784-a403ed3e6015\\exec-5cbf5685-91e8-4913-ada4-3894eed9601f.png"
+  },
+  {
+    "destination": "luna",
+    "mode": "sunset",
+    "prompt": "Use case: lighting-weather. Image 1 is the edit target. Produce a photorealistic SUNSET illumination variant of this exact ASTRAEA resort. Lunar sunset: very low WHITE sunlight from the far LEFT, the opposite grazing direction to dawn, with long crisp shadows across the cratered terrain toward the right. Most of the right landscape is in shadow. Do not tint the lunar ground orange; no atmosphere, clouds, twilight gradient or haze. Black vacuum sky. Earth remains in place. Warm resort lights begin to dominate. Lock the camera, crop, aspect ratio, building geometry, furniture, windows, landscape silhouette and celestial object positions. Change only light, cast shadows, atmospheric illumination where appropriate and emissive lighting. Matching geometry for a continuous premium time-of-day configurator is critical. Keep dark detail and highlights controlled. No additional objects or people. No text, labels or logos.",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a1344c-b609-7062-9784-a403ed3e6015\\exec-42e1d105-b25b-4616-b634-bc3df2a62b24.png"
+  },
+  {
+    "destination": "europa",
+    "mode": "sunset",
+    "prompt": "Use case: lighting-weather. Image 1 is the edit target. Produce a photorealistic SUNSET illumination variant of this exact ASTRAEA resort. Europa sunset: fading low neutral-cold sunlight from the LEFT makes long crisp icy shadows toward the right, with a distinctly darker landscape than daytime and brighter warm interior and exterior architectural lighting. Jupiter stays exactly in place and size. Black vacuum sky, NO blue atmospheric haze, no clouds, no terrestrial orange sky. Icy shadows retain subtle cool reflected light. Lock the camera, crop, aspect ratio, building geometry, furniture, windows, landscape silhouette and celestial object positions. Change only light, cast shadows, atmospheric illumination where appropriate and emissive lighting. Matching geometry for a continuous premium time-of-day configurator is critical. Keep dark detail and highlights controlled. No additional objects or people. No text, labels or logos.",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a1344c-b609-7062-9784-a403ed3e6015\\exec-600ebc8b-0a24-4f8a-b30a-57c39fa29cee.png"
+  },
+  {
+    "destination": "saturn",
+    "mode": "sunset",
+    "prompt": "Use case: lighting-weather. Image 1 is the edit target. Produce a photorealistic SUNSET illumination variant of this exact ASTRAEA resort. Orbital shadow entry: the orbital resort is moving into the shadow of Saturn. Most of the lounge floor and architecture are in soft darkness, one narrow final band of direct light crosses the far terrace. Warm cove and lamp lighting becomes prominent. Saturn and rings stay in exactly the same position, with reduced incident light but readable band detail. Black vacuum. This is NOT a surface sunset and must not add a terrestrial sky or ground. Lock the camera, crop, aspect ratio, building geometry, furniture, windows, landscape silhouette and celestial object positions. Change only light, cast shadows, atmospheric illumination where appropriate and emissive lighting. Matching geometry for a continuous premium time-of-day configurator is critical. Keep dark detail and highlights controlled. No additional objects or people. No text, labels or logos.",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a1344c-b609-7062-9784-a403ed3e6015\\exec-7dcb1255-f7a9-4594-9073-c55133503ce1.png"
+  },
+  {
+    "destination": "mars",
+    "mode": "day",
+    "prompt": "Use case: lighting-weather. Image 1 is the edit target. Produce a photorealistic DAY illumination variant of this exact ASTRAEA resort. Martian DAY: sun is high above the frame, so remove the low sunset sun from the horizon. Bright natural pale sunlight and SHORT, distinct shadows reveal dusty red, brown and ochre terrain. Thin pale dusty tan sky, NOT Earth-blue and NOT saturated orange sunset. Reduce artificial interior light intensity; architecture is illuminated by daylight with realistic material texture and controlled highlights. Lock the camera, crop, aspect ratio, building geometry, furniture, windows, landscape silhouette and celestial object positions. Change only light, cast shadows, atmospheric illumination where appropriate and emissive lighting. Matching geometry for a continuous premium time-of-day configurator is critical. Keep dark detail and highlights controlled. No additional objects or people. No text, labels or logos.",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a1344c-b609-7062-9784-a403ed3e6015\\exec-df39958c-4e72-477c-95cf-a933cf627274.png"
+  },
+  {
+    "destination": "titan",
+    "mode": "day",
+    "prompt": "Use case: lighting-weather. Image 1 is the edit target. Produce a photorealistic DAY illumination variant of this exact ASTRAEA resort. Titan DAY: muted golden overcast illumination through very thick atmospheric haze, softly visible amber-brown terrain, almost no hard shadows. The distant celestial silhouette is faintly visible through haze, not a crisp sky object. Reduce interior lights relative to the diffuse daylight. No blue skies or clear sun. Restore photographic material detail from the blurry reference while preserving architecture and camera exactly. Lock the camera, crop, aspect ratio, building geometry, furniture, windows, landscape silhouette and celestial object positions. Change only light, cast shadows, atmospheric illumination where appropriate and emissive lighting. Matching geometry for a continuous premium time-of-day configurator is critical. Keep dark detail and highlights controlled. No additional objects or people. No text, labels or logos.",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a1344c-b609-7062-9784-a403ed3e6015\\exec-10faecdb-afbd-4697-8b1a-43b03228168e.png"
+  },
+  {
+    "destination": "titan",
+    "mode": "sunset",
+    "prompt": "Use case: lighting-weather. Image 1 is the edit target. Produce a photorealistic SUNSET illumination variant of this exact ASTRAEA resort. Titan SUNSET: rich amber-brown diffuse sky, low-contrast atmospheric horizon, softly glowing distant haze. No sharp sun or hard shadows, no Earth-blue sky. Warm architectural lights are brighter relative to terrain; gold reflections on the terraces. The distant celestial silhouette stays exactly in place but is softened by dense haze. Restore photographic detail from the blurry reference, preserve all architecture and camera. Lock the camera, crop, aspect ratio, building geometry, furniture, windows, landscape silhouette and celestial object positions. Change only light, cast shadows, atmospheric illumination where appropriate and emissive lighting. Matching geometry for a continuous premium time-of-day configurator is critical. Keep dark detail and highlights controlled. No additional objects or people. No text, labels or logos.",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a1344c-b609-7062-9784-a403ed3e6015\\exec-3417bf48-ae06-4f51-9ed1-673144f6d1e5.png"
+  },
+  {
+    "destination": "titan",
+    "mode": "night",
+    "prompt": "Use case: lighting-weather. Image 1 is the edit target. Produce a photorealistic NIGHT illumination variant of this exact ASTRAEA resort. Titan NIGHT: thick deep brown-black atmospheric darkness, no direct sunlight, no clear stars and no blue sky. The landscape remains faintly readable in soft diffuse reflected light. Warm interior windows and subtle exterior/path lighting clearly illuminate the elegant resort with real local light falloff. Distant celestial silhouette barely discernible through dense haze. Restore photographic detail from the blurry reference while preserving the original exact framing and architecture. Lock the camera, crop, aspect ratio, building geometry, furniture, windows, landscape silhouette and celestial object positions. Change only light, cast shadows, atmospheric illumination where appropriate and emissive lighting. Matching geometry for a continuous premium time-of-day configurator is critical. Keep dark detail and highlights controlled. No additional objects or people. No text, labels or logos.",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a1344c-b609-7062-9784-a403ed3e6015\\exec-f7b05b5c-e913-4c68-aec1-8991cb4053a3.png"
+  },
+  {
+    "destination": "europa",
+    "mode": "day",
+    "tool": "built-in image_gen",
+    "prompt": "Use case: lighting-weather. Asset type: coordinated Day lighting state for ASTRAEA Europa resort architectural configurator. Image 1 is the edit target, not a loose style reference. Correct only the environmental daylight presentation. Europa is airless for this artistic scene: remove the blue atmospheric sky gradient, blue horizon glow and distant aerial fog. All open sky outside Jupiter must be neutral deep black vacuum, right down to the hard distant ice horizon. Jupiter keeps exactly its present size, position, texture, silhouette and illumination; the small moon remains exactly in place. Use bright neutral-white direct sunlight revealing fractured white ice, fine ridges and crisp detailed shadows; subtle blue reflected light can remain inside ice shadows only, not atmospheric blue haze. Preserve readable shadow detail and controlled highlights. Keep the exact camera, 3:2 landscape composition, crop, architecture outline, windows, furniture, terrace, pools and water features and every terrain silhouette pixel-aligned with the reference. This image crossfades against the original, so do not move, resize, add or remove any structure or object. Preserve the existing warm interior lighting and premium photorealistic material quality. No text, logos, extra people, borders, decorative glows, new suns, clouds or altered geography. Change only the unwanted atmospheric appearance and corresponding natural daylight clarity; no redesign.",
+    "source": "C:\\Users\\User\\.codex\\generated_images\\01a1344c-b609-7062-9784-a403ed3e6015\\exec-ff7458aa-4808-4d76-9156-5b9fcd66ed93.png"
+  }
+]

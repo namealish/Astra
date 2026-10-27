@@ -1,0 +1,28 @@
+ASTRAEA navigation imagery and lighting variants
+
+EARTH WITH CLOUDS: NASA Science, Earth with Clouds 3D Model
+https://science.nasa.gov/resource/earth-with-clouds-3d-model/
+https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/09/e/EarthClouds_1_12756.glb
+JUPITER: NASA Science, Jupiter 3D Model
+https://science.nasa.gov/resource/jupiter-3d-model/
+https://assets.science.nasa.gov/content/dam/science/psd/solar/2023/09/j/Jupiter_1_142984.glb
+
+Embedded model atlases reprojected through source geometry/UVs to equirectangular
+maps, with 2K/1K optimized WebP exports. NASA media usage guidelines:
+https://www.nasa.gov/nasa-brand-center/images-and-media/
+NASA does not endorse ASTRAEA. No NASA logos or insignia are used.
+Cached source GLBs in docs/source-maps are not deployed.
+Existing five-destination hero maps retain credits in planet-credits.txt.
+
+RESORT LIGHTING: 16 fictional photographic-style architectural variants created
+with built-in image generation from the project's existing resort compositions.
+The 16 exact prompts and original PNG paths are in docs/lighting-assets.json.
+Original generated files are retained; exports use 1536px / 768px WebP.
+Four original base states complete the 20-state set. The asset optimizer is
+docs/prepare_lighting_assets.py. These images are art-directed concepts, not
+real resorts, scientific observations, or measured physical lighting results.
+Architecture and celestial scale remain illustrative. AI image variations can
+introduce small geometric differences between states.
+
+The launch spacecraft and terminal are procedural WebGL geometry authored in
+scene-renderer.js and departure-scene.js; no imported high-detail model is claimed.

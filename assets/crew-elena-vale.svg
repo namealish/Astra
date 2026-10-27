@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="630" height="780" viewBox="0 0 630 780">
+<defs><radialGradient id="bg"><stop stop-color="#39444b"/><stop offset="1" stop-color="#171b23"/></radialGradient>
+<linearGradient id="coat" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#526470"/><stop offset=".48" stop-color="#18252f"/><stop offset="1" stop-color="#070d13"/></linearGradient>
+<linearGradient id="face" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ebc7a6"/><stop offset=".47" stop-color="#c3a184"/><stop offset="1" stop-color="#805b49"/></linearGradient>
+</defs>
+<rect width="630" height="780" fill="url(#bg)"/>
+<circle cx="470" cy="126" r="245" fill="#97a1a3" opacity=".05"/>
+<path d="M 0 660 Q 315 600 630 658 L 630 780 L 0 780" fill="#071017" opacity=".55"/>
+<path d="M 94 660 Q 150 492 257 482 L 318 468 L 379 484 Q 507 495 540 660 L 570 780 L 55 780 Z" fill="url(#coat)"/>
+<path d="M 251 489 L 317 605 L 378 488 L 351 473 L 283 473 Z" fill="#e1d9ca"/>
+<path d="M 297 564 L 315 615 L 334 563 L 320 545 Z" fill="#b29b76"/>
+<path d="M 283 453 L 282 517 Q 318 543 349 514 L 347 453 Z" fill="url(#face)"/>
+<ellipse cx="316" cy="339" rx="111" ry="147" fill="url(#face)"/>
+<path d="M 207 344 Q 190 236 244 202 Q 317 150 390 211 Q 423 246 422 336 Q 399 283 385 259 Q 353 229 317 233 Q 261 234 221 284 Z" fill="#332720"/>
+<path d="M 212 312 Q 222 252 248 251 L 243 367 Q 226 397 213 354 Z" fill="#332720" opacity=".95"/>
+<path d="M 399 282 Q 423 312 411 369 L 393 390 L 396 285 Z" fill="#332720"/>
+<path d="M 258 346 Q 279 338 292 345" stroke="#433126" stroke-width="3" fill="none"/>
+<path d="M 344 346 Q 365 339 381 347" stroke="#433126" stroke-width="3" fill="none"/>
+<circle cx="278" cy="350" r="3" fill="#202224"/><circle cx="360" cy="350" r="3" fill="#202224"/>
+<path d="M 317 352 L 308 399 Q 317 407 327 401" stroke="#7c594c" stroke-width="2" fill="none" opacity=".55"/>
+<path d="M 281 433 Q 314 448 350 430" stroke="#6d4540" stroke-width="3" fill="none"/>
+<path d="M 228 480 Q 258 481 288 526 L 246 601 L 199 517" fill="#2b3d48" stroke="#89939a" stroke-width="1"/>
+<path d="M 407 482 Q 371 485 347 526 L 388 601 L 436 520" fill="#26333d" stroke="#89939a" stroke-width="1"/>
+<path d="M 418 550 H 475" stroke="#c5a979" stroke-width="3"/>
+<circle cx="431" cy="533" r="5" fill="#d1b685"/>
+<text x="40" y="737" font-family="Arial" font-size="10" letter-spacing="5" fill="#ded3c3" opacity=".6">ASTRAEA / COMMAND &amp; SERVICE</text>
+</svg>

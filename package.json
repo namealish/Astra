@@ -1,0 +1,32 @@
+{
+  "name": "astraea-interplanetary",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Self-contained cinematic luxury space travel website with a genuine native WebGL planetary carousel.",
+  "scripts": {
+    "dev": "node server.mjs",
+    "start": "node server.mjs",
+    "build": "node build.mjs",
+    "check": "node docs/check.mjs",
+    "test:departure": "node docs/departure-check.mjs",
+    "test:solar": "node docs/solar-check.mjs",
+    "test:solar-navigation": "node docs/solar-navigation-check.mjs",
+    "test:lighting": "node docs/lighting-check.mjs",
+    "test:lighting-transitions": "node docs/lighting-transition-check.mjs",
+    "test:lifecycle": "node docs/lifecycle-check.mjs",
+    "test:exploration": "node docs/exploration-check.mjs",
+    "test:cinematic": "node docs/cinematic-check.mjs",
+    "test:editorial": "node docs/editorial-check.mjs",
+    "test:visual": "node docs/visual-check.mjs",
+    "test:integration": "node docs/integration-check.mjs",
+    "test:performance": "node docs/performance-check.mjs",
+    "test:render-budget": "node docs/render-budget-check.mjs",
+    "benchmark": "node docs/benchmark.mjs",
+    "test:assets": "node docs/assets-check.mjs",
+    "test:acceptance": "node docs/acceptance-check.mjs"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.64.1"
+  }
+}

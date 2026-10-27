@@ -1,0 +1,19 @@
+ASTRAEA resort lighting concepts — October 2026
+
+Seventeen coordinated lighting variants were created with built-in OpenAI
+image generation, alongside three retained base resort images for 20 states.
+These are fictional photographic-style concepts, not documentary imagery or
+physically simulated, habitable resort environments.
+
+On 22 October 2026, Europa Day was refined from europa-resort.webp to remove
+the Earth-like blue horizon/atmospheric haze while retaining the composition.
+The original base image remains unchanged for existing editorial uses.
+
+Deployment assets: lighting-{luna,mars,europa,saturn,titan}-{mode}.webp,
+with -small.webp counterparts. Not every world needs all four new files;
+resort-lighting.js maps the three retained base images to their proper modes.
+Generated variants are exported at 1536px desktop and 768px mobile widths.
+
+Exact prompts and original generated PNG paths: docs/lighting-assets.json.
+Export tool: docs/prepare_lighting_assets.py (Pillow).
+No generation or third-party image hosting is used at runtime.

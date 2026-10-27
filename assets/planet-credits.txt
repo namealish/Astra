@@ -1,0 +1,60 @@
+ASTRAEA PLANETARY ASSETS / SOURCE & MODIFICATION RECORD
+
+LUNA: NASA Scientific Visualization Studio, CGI Moon Kit (2019).
+LROC WAC color mosaic and LOLA elevation data; visualization: Ernie Wright (USRA).
+https://svs.gsfc.nasa.gov/4720/
+Sources: lroc_color_poles_4k.tif and ldem_16_uint.tif.
+Local modifications: bounded multiscale local contrast, a subtle cold grade,
+resizing/WebP, tangent normals from LOLA elevation (2x relief), and roughness
+approximation. Lunar imagery is not synthetic cratering.
+
+EUROPA: NASA/JPL-Caltech, NASA Science Europa 3D Model, Visualization Technology
+Applications and Development (VTAD). Embedded color_2016_03_10 map.
+https://science.nasa.gov/resource/europa-3d-model/
+Local modifications: neutral/cool grade, bounded multiscale contrast to reveal
+existing fractures, resizing/WebP, locally normalized high-pass micro-normals,
+and separate clean-ice/mineral-fracture roughness. These micro-normals are
+artistic approximations, NOT measured Europa elevations. No new fracture
+networks are drawn; the organic fractures are in the source map.
+
+TITAN: NASA/JPL-Caltech, NASA Science Titan 3D Model, VTAD.
+https://science.nasa.gov/resource/titan-3d-model/
+Local modifications: resizing/WebP and amplification of resolved broad cloud
+and latitude contrast from the source. A restrained, seamless procedural
+aerosol field and polar haze hood add broad optical-depth variation. These
+are artistic atmosphere enhancements, not new observed features or terrain.
+Layered atmospheric scattering is rendered in real time; it is an artistic
+physical approximation, not a climate model.
+
+SATURN COLOR AND RINGS: NASA/JPL-Caltech, NASA Science Saturn 3D Model, VTAD.
+https://science.nasa.gov/resource/saturn-3d-model/
+The embedded saturn_diff.jpg cube atlas is reprojected using the original
+model's mesh and UV coordinates, accounting for the source oblate shape.
+Native cloud bands, small storms, and polar detail receive bounded local
+contrast enhancement and are exported at 1024/2048/4096 pixel widths.
+Embedded saturn_rings_25sat_outterRings strip. Modified: native 4096-sample radial
+strip, source-derived radial detail contrast, unsaturated optical density,
+soft edges and a low-density Cassini Division at approximately 1.95-2.03 radii.
+
+MARS COLOR: Solar System Scope / INOVE, NASA-derived planetary map.
+https://www.solarsystemscope.com/textures/
+Licensed CC BY 4.0: https://creativecommons.org/licenses/by/4.0/
+Mars: 8k_mars.jpg (download mirror used because origin returned HTTP 403):
+https://raw.githubusercontent.com/Shriisoot/Planets-texture/main/8k_mars.jpg
+Local modifications: Mars saturation reduced; bounded multiscale local contrast
+reveals existing terrain. The previous Solar System Scope Saturn color map was
+replaced by the NASA model atlas above; its source remains cached for provenance.
+Resized to 1024/2048/4096 texture tiers; Mars micro-normal/roughness derived only
+from locally normalized high-pass image detail, NOT a measured MOLA elevation
+map. Broad albedo regions are removed before deriving normal slopes, which are
+limited to avoid implausible high ridges around dark mineral boundaries.
+
+NASA source imagery is used under NASA's images/media usage guidelines:
+https://www.nasa.gov/nasa-brand-center/images-and-media/
+NASA/JPL do not endorse ASTRAEA. No NASA logos or insignia are included.
+All color grading, lighting, scales and atmosphere parameters are artistic.
+Enhancements improve the visibility of source detail; they cannot recover
+features absent from the original imagery. In particular, Europa's source
+coverage varies in resolution and Titan's visible atmosphere is naturally soft.
+Original source caches are excluded from the production build. The local
+optimized derivatives and this attribution file must be distributed together.
